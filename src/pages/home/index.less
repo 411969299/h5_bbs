@@ -1,0 +1,239 @@
+
+@import '../../styles/base/base-750';
+
+html,body {
+  background: #fff;
+}
+
+.page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+
+  .header {
+    .height(144);
+    font-size: 0;
+    background: #fff;
+
+    > a {
+      position: relative;
+      display: inline-block;
+      width: 25%;
+      height: 100%;
+      .padding-top(28);
+      .font-size(26);
+      color: #757575;
+      text-align: center;
+
+      > span {
+        position: absolute;
+        right: 0;
+        .top(28);
+        .height(74);
+        border-right: 1px solid #B4B4B4;
+      }
+
+      > i {
+        .width(40);
+        .height(40);
+        color: #04C9BF;
+        .font-size(45);
+      }
+
+      > b {
+        position: absolute;
+        left: 58%;
+        .top(17);
+        .min-width(40);
+        .height(40);
+        .max-width(50);
+        .border-radius(40);
+        .font-size(22);
+        color: #fff;
+        .line-height(40);
+        background: #F43530;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .interval {
+    .height(30);
+    background: #ECECEC;
+  }
+
+  .activity {
+    .height(144);
+    font-size: 0;
+    background: #fff;
+
+    > a {
+      position: relative;
+      display: inline-block;
+      width: 50%;
+      .font-size(34);
+      color: #000;
+      .padding-left(69);
+      .line-height(144);
+
+      > span {
+        position: absolute;
+        right: 0;
+        .top(28);
+        .height(88);
+        border-right: 1px solid #D0D0D0;
+      }
+
+      > p {
+        display: inline-block;
+      }
+
+      .icon_con {
+        position: relative;
+        display: inline-block;
+        .width(72);
+        .height(72);
+        border-radius: 100%;
+        vertical-align: middle;
+        .margin-right(20);
+
+        > i {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          .width(38);
+          .height(38);
+          .margin(-19, 0, 0, -19);
+          background: #fff;
+          .border-radius(5);
+          .font-size(22);
+
+          &:before {
+            position: absolute;
+            left: 0;
+            .top(8);
+          }
+        }
+      }
+    }
+
+    .apply .icon_con {
+      background: #FFAB2C;
+
+      > i {
+        color: #FFAB2C;
+      }
+    }
+
+    .forum .icon_con {
+      background: #2ECC71;
+      color: #fff;
+      .font-size(45);
+      &:before {
+        position: absolute;
+        .left(4);
+        .top(15);
+      }
+    }
+  }
+
+  .forum_list {
+    .padding-left(30);
+    background: #fff;
+
+    .title {
+      .height(60);
+      .line-height(60);
+      .font-size(28);
+      color: #7D7D7D;
+      border-bottom: 1px solid #E3E3E3;
+    }
+
+    .list {
+
+      .list_con {
+
+        > li {
+          position: relative;
+          .height(120);
+          border-bottom: 1px solid #E3E3E3;
+          font-size: 0;
+
+          > img {
+            .width(86);
+            .height(86);
+            .margin-right(25);
+            .margin-top(17);
+            vertical-align: top;
+          }
+
+          > p {
+            display: inline-block;
+            .line-height(120);
+            .font-size(34);
+            color: #000;
+
+            .lable {
+              display: none;
+            }
+          }
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+
+        .clock {
+
+          .lable {
+            position: relative;
+            left: 0;
+            .top(-4);
+            display: inline-block;
+            .width(62);
+            .height(34);
+            .margin-right(10);
+            text-align: center;
+            .line-height(32);
+            .font-size(22);
+            color: #57ACFF;
+            .border-radius(3);
+            border: 1px solid #57ACFF;
+          }
+        }
+
+        .join {
+
+          .tip {
+            position: absolute;
+            right: 0;
+            top: 0;
+            .width(100);
+            .height(76);
+            background: url(../../assets/images/join.png);
+            .background-size(100, 76);
+          }
+        }
+      }
+    }
+  }
+
+  .loading {
+    text-align: center;
+    .height(120);
+    .line-height(120);
+    .font-size(28);
+    color: #999;
+
+    div {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+}

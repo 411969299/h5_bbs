@@ -1,0 +1,165 @@
+@bcolor: #e6e6e6;
+@fontcolor:#959595;
+@linkcolor:#2F74C5;
+
+.forum_reply {
+  background-color: #fff;
+  // .border-bottom(1, solid, @bcolor);
+  margin: 0px auto;
+  .width(750);
+  .replsy {
+    .padding-left(30);
+  }
+  .first_level_reply {
+    .padding(40, 0);
+    border-bottom: 1px solid #E3E3E3;
+
+    .head {
+      position: relative;
+      overflow: hidden;
+      .margin-bottom(33);
+      .avatar {
+        float: left;
+        .margin-right(20);
+        img {
+          .width(52);
+          .height(52);
+          border-radius: 50%;
+        }
+      }
+      .name {
+        float: left;
+        .height(52);
+        .line-height(52);
+        font-weight: 200;
+        color: #595959;
+      }
+      .moreaction {
+        position: absolute;
+        .right(30);
+        i {
+          .font-size(15);
+          color: #959595;
+        }
+      }
+    }
+    .forum_reply_con {
+      .margin-bottom(32);
+      .font-size(34);
+      .line-height(48);
+
+      img {
+        .width(192);
+        .height(192);
+      }
+
+      p {
+        .margin-right(30);
+        word-wrap: break-word;
+        word-break: normal;
+      }
+    }
+    .reply_at_list {
+      .margin-bottom(30);
+      .font-size(28);
+      font-weight: 200;
+      p {
+        float: left;
+      }
+      .at_member {
+        .margin-left(100);
+      }
+    }
+    .post_details {
+      position: relative;
+      font-weight: 200;
+      span {
+        color: #959595;
+        .margin-right(42);
+      }
+      .reply_button {
+        position: absolute;
+        .top(0);
+        .right(20);
+        i {
+          .font-size(35);
+          color: #959595;
+        }
+      }
+    }
+  }
+
+  .second_reply_list {
+    .padding(30, 43, 15, 0);
+    border-bottom: 1px solid #E3E3E3;
+
+    .list_wrap {
+      .list {
+        .margin-bottom(15);
+        .list_main {
+          display: flex;
+          font-weight: 200;
+          .name {
+            color: #595959;
+            .font-size(32);
+            .margin-right(10);
+          }
+          .right-section {
+            flex: 1;
+            .list_mention {
+              .font-size(26);
+              font-weight: 200;
+              p {
+                float: left;
+              }
+              .at_member {
+                .margin-left(110);
+              }
+            }
+            .say {
+              .margin-bottom(17);
+              .font-size(32);
+              .line-height(45);
+
+              img {
+                .width(192);
+                .height(192);
+              }
+            }
+          }
+        }
+      }
+    }
+    .more_list {
+      text-align: center;
+      .margin(30, 0);
+    }
+    .more_list a {
+      color: @linkcolor;
+      font-weight: 200;
+    }
+  }
+}
+
+.loading {
+  .height(120);
+  .line-height(120);
+  color: #999;
+  .font-size(28);
+  text-align: center;
+
+  div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+
+.mint-actionsheet.actionsheet-float-transition .mint-actionsheet-button {
+  color: #04C9BF;
+}
+
+.icon-dustbin {
+  color: #3D83D7;
+  .font-size(28);
+}

@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+src/assets/sprites/icons
+selenium-debug.log
+test/unit/coverage
+test/e2e/reports
+
+.tags
+.tags1
